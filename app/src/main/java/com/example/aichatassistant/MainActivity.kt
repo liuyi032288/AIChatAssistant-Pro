@@ -70,14 +70,14 @@ class MainActivity : Activity() {
 
         val apiKey = EditText(this).apply {
             hint = "请输入 DeepSeek API Key"
-            singleLine = true
+            setSingleLine(true)
         }
         root.addView(apiKey)
 
         val model = EditText(this).apply {
             hint = "模型名称，例如 deepseek-chat"
             setText("deepseek-chat")
-            singleLine = true
+            setSingleLine(true)
         }
         root.addView(model)
 
